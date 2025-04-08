@@ -20,3 +20,9 @@ const regularUser = {
 
 // console.log(regularUser.fullname.userFullName.firstName);
 
+const course ={
+    coursename: "JavaScript",
+    price: 999,
+    courseInstructor : "Hitesh Choudhary" 
+}
+
