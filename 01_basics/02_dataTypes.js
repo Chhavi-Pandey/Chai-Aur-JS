@@ -12,3 +12,4 @@
 
 console.log(typeof null) // typeof used for finding the type of value 
 // and here is the typeof null which is object; (and it is interesting)
+console.log(typeof undefined);
