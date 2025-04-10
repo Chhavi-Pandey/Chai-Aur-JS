@@ -34,9 +34,9 @@ let str3 = str1 + str2;
 // console.log(1 + 2 + "2");
 
 // So if the first conversion is string then all of it gonna consider in string otherwise in number if first conversion is number
-
-// console.log(+true);
-// console.log(+ "");
+// Refer documentation of EcmaScript 7 Abstract Operations 7.1 Type conversion
+// console.log(+true); //1
+// console.log(+ ""); //0
 
 // + used for conversion
 
