@@ -1,6 +1,6 @@
 // Primitive data type : Call by value
-
-// 7 types:  String, Boolean, null, undefined, Number, Symbol, BigInt(Scientific value)
+// Difference:- How they stored in memory and how can we access them (Primitive and non-primitive data type)
+// primitive 7 types:  String, Boolean, null, undefined, Number, Symbol, BigInt(Scientific value)
 
 // Dynamically typed language
 
@@ -9,13 +9,25 @@
 // Array, Objects, Functions
 
 const id = Symbol('123') // USe for making unique
+const anotherId = Symbol('123');
+// console.log(id === anotherId);
 
 const bigNumber = 674927479274n
-console.log(typeof bigNumber) // Just use n in the last and it become bigint
+// console.log(typeof bigNumber) // Just use n in the last and it become bigint
 
 // Array use square brackets [], object : in form of key-value pair use {} : Non primitive always object datatype
 
+const vampires = ["Rebekah", "Katherine", "Caroline"];
 
+let myObj ={
+    name : "Klaus",
+    age : 1000
+}
+
+const myFunction = function(){
+    console.log("Hello Vampires");
+    
+} // function object
 
 // ***********************************************************************************************************************
 // Stack(Primitive)=> gives copy   Heap(non- primitive)=> gives reference
