@@ -1,4 +1,4 @@
-const myArr = [1, 2, 3, 4, 5, 6];
+const myArr = [1, 2, 3, 4, 5, 6]; // can contain mix of different data types and also resizable
 // console.log(myArr[0]);
 
 const mySuperNaturalHero = ["Klaus", "Elijah", "Damon"];
@@ -54,7 +54,7 @@ console.log("B ",myArr);
 // Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.@returns — An array containing the elements that were deleted.
 
 const myn2 = myArr.splice(1,3)
-
+// It includes the last index but moreover it changes in to original array i.e. affects original array
 console.log("C ",myArr);
 console.log(myn2);
 
