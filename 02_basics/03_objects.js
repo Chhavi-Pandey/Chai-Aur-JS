@@ -33,6 +33,7 @@ console.log(jsUser);
 
 jsUser.greeting = function(){
     console.log(`Hello Js User, ${jsUser.name}`);
+    // here also can use this.name as this pointer points to the current object which is jsUser
 }
 
 console.log(jsUser.greeting); // function(anonymous): the function reference is given even though the function has not executed yet
