@@ -19,7 +19,7 @@ let myCreatedDate = new Date("2025-02-27"); // mm-dd-yy or yy-mm-dd or any forma
 
 let myTimeStamp = Date.now();
 
-// console.log(myTimeStamp);
+console.log(myTimeStamp);
 // console.log(myCreatedDate.getTime()); // it will help in comparing timeStamp and used in like quizzes or hotel booking system
 
 // console.log(Math.floor(Date.now()/1000)) // for seconds
