@@ -1,15 +1,17 @@
 const tvd_heros = ["Stefan", "Damon", "Tyler"];
 const TheOriginals = ["Klaus", "Elijah", "Kol"];
 
-tvd_heros.push(TheOriginals); // this consider a whole array as single element
+tvd_heros.push(TheOriginals); // this consider a whole array as single element : so it's like array inside array
 
 // console.log(tvd_heros);
-// console.log(tvd_heros[3][1]);
+// console.log(tvd_heros[3][1]); // to access array element which is consider as an element because of push in tvd_heros
 
-const allHeros = tvd_heros.concat(TheOriginals); // concat returns a new array
+const allHeros = tvd_heros.concat(TheOriginals); // concat returns a new array merging all in one array
 console.log(allHeros);
 
 const all_new_heros = [...tvd_heros, ...TheOriginals]; //spread operator '...': expand an iterable into multiple (individual) values
+
+// concat connect only two strings or array or whatever but spread operator can work on more than two.
 
 console.log(all_new_heros);
 
