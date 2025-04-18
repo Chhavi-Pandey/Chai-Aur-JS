@@ -53,3 +53,40 @@ function loginUserMessage(userName){ // userName = "Care" we can also pass param
 // console.log(loginUserMessage("Caroline"));
 // console.log(loginUserMessage("")); //just logged in
 // console.log(loginUserMessage()); //undefined just logged in
+
+
+function calculateCartPrice(...num1) { // ... here this means rest operator yeah it is also called spread operator but their name changes according to use context.
+    //Here Rest operator means that different elements should be bundled and then executed actually it store or bundle elements in array 
+    return num1;
+}
+// console.log(calculateCartPrice(200, 400, 500)); //[200,400,500]
+
+function calculateCartPrice(val1, val2,...num1) { 
+    return num1;
+}
+console.log(calculateCartPrice(200,400,500,1000)); // 500,1000 because 200 and 400 is for val1 and val2
+
+const user = {
+    username : "Care",
+    price  : 8000
+}
+
+function handleObject(anyobject) {
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`); //typesafety to be check becuase if price typo to prices then the result will be undefined
+    
+}
+
+// handleObject(user);
+
+// handleObject({
+//     username : "Nik",
+//     price : 9000
+// })
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
