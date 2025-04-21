@@ -32,7 +32,7 @@ if(Object.keys(emptyObj).length === 0){ // to check whether object is empty
 // false == '' //true
 // 0 == '' // true
 
-// Nullish Coalescing Operator (??): null undefined
+// Nullish Coalescing Operator (??): null undefined : to avoid null and undefined operator so it puts some flag value
 
 let val1;
 val1 = 5 ?? 10;
