@@ -27,3 +27,7 @@ switch (month) {
         console.log("default case get matched");
         break;
 }
+
+// **** If we don't use break keyword and in that case when case 3 get matched it won't check case 4 and automatically will print it without even checking that whether it is true or not. But not the default case because we get a case matched. Default case executed only when no case get matched.
+
+// If condition is string then please be careful about case sensitivity.
