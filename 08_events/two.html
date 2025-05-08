@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Originals</h1>
+    <button id="stop">Pause</button>
+</body>
+
+<script>
+
+    const tagLine = function(){
+        console.log("ALways and Forever");
+        
+    }
+
+    // setTimeout(function(){
+    //     console.log("Always And Forever");
+    // }, 2000)
+    setTimeout(tagLine, 2000);
+
+    const changeText = function(){
+        document.querySelector('h1');
+        innerHTML = "The Mikaelsons"
+    }
+
+    const changeTitle = setTimeout(changeText, 2000);
+
+
+    //clearTimeout() // to stop setTimeout
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeTitle);
+        console.log("Stopped");
+    })
+
+</script>
+</html>
