@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API request and V8 engine</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', requestUrl);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+
+        if(xhr.readyState === 4){
+            let data = JSON.parse(this.responseText);  // to convert this in to json format as it was in string format
+            console.log(data.followers); 
+        }
+    }
+    // console.log is a developer tool 
+    // v8 engine is made of c++ language
+    //console.log is in v8 engine
+    xhr.send(); //to call open
+</script>
+</html>
