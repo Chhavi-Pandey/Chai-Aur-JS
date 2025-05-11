@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+<script>
+    function init(){
+        let name = "Mozilla";
+        function displayName(){
+            console.log(name);  
+        }
+       return displayName; // If we've returned this then this whole lexical scope will be returned so outer function can be accessed
+    }
+
+    const myfunc = init();
+    myfunc(); //Mozilla
+
+    // function outer(){
+    //     let username = "Chhavi";
+
+    //     function inner(){
+    //         console.log(username);
+            
+    //     }
+    //     inner();
+    // }
+    // outer();
+    // console.log("Too Outer: ",username);
+</script>
+
+<script>
+    // document.getElementById('orange').onclick = function(){
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = 'green'
+    // }
+// What if there are 100 buttons 
+    function clickhandler(color){
+        // document.body.style.backgroundColor = `${color}`
+       return function(){
+            document.body.style.backgroundColor = `${color}` // this color has that access as we've studied in closure and lexical scope
+        }
+    }
+    document.getElementById('orange').onclick = clickhandler("orange");
+    document.getElementById('green').onclick = clickhandler("green");
+</script>
+</html>
